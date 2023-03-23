@@ -10,7 +10,7 @@
     --color-gray-800:#8A8A8A;
     --color-bright: #ffffff;
     --font-family: 'Mukta Mahee', sans-serif;
-    --font-semibold: 600 32px;
+    --font-semibold: 600 32px var(--font-family);
     --font-medium-300: 500 24px var(--font-family);
     --font-medium-200: 500 18px var(--font-family);
     --font-medium-100: 500 16px var(--font-family);
@@ -25,4 +25,5 @@
     --transition-duration: 0.1s;
     --transition-timing: ease-in;
     --transition-property: all;
+    --headline-line-height: 110%;
 }

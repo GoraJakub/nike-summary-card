@@ -1,2 +1,33 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+
+
+.summary-wrapper {
+    padding: 50px 24px;
+    
+    .summary-headline {
+        margin-bottom: 50px;
+    }
+    
+    .summary-products {
+        min-height: 312px;
+        &-item {
+            display: flex;
+            min-height: 80px;
+            margin-bottom: 24px;
+            .product-icon {
+                max-width: 78px;
+                min-height: 80px;
+                height: 100%;
+                width: 100%;
+                background-color: red;
+                border-radius: var(--border-radius-sm);
+                margin-right: 18px;
+            }
+            .product-details {
+                // background-color: aqua;
+                width: 100%;
+            }
+        }
+    }
+}
