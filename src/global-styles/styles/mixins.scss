@@ -1,0 +1,8 @@
+@mixin border($stroke: var(--border-stroke),$style: var(--border-style),$color: var(--color-primary),$radius: var(--border-radius-sm)) {
+    border: $stroke $style $color;
+    border-radius: $radius;
+}
+
+@mixin transition($prop: var(--transition-property), $timing: var(--transition-timing), $duration: var(--transition-duration)){
+    transition: $prop $timing $duration;
+}

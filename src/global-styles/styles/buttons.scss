@@ -1,0 +1,25 @@
+.btn {
+    min-height: 54px;
+    display: flex;
+    flex: 0 1 400px;
+    font: var(--font-medium-200);
+    justify-content: center;
+    align-items: center;
+    &:hover:not(:active) {
+        @include border($radius: var(--border-radius-xl), $color: var(--color-gray-800));
+    }
+    &.btn-primary {
+        @include border($radius: var(--border-radius-xl));
+        background-color: var(--color-primary);
+        color: var(--color-bright);
+        &:hover:not(:active) {
+            background-color: var(--color-gray-800);
+        }
+    }
+    &.btn-secondary {
+        @include border($radius: var(--border-radius-xl), $color: var(--color-gray-400));
+        background-color: var(--color-bright);
+        color: var(--color-gray-800);
+    }
+
+}

@@ -1,13 +1,15 @@
 /// Main Styles File
 /// Here we import all the global Styles files we need for our project.
 
+@import "styles/mixins.scss";
 @import "styles/normalize.scss";
 @import "styles/root.scss";
 @import "styles/fonts.scss";
+@import "styles/buttons.scss";
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--color-primary);
+  font-family: var(--font-family);
 }
 
 p {
