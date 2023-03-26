@@ -7,7 +7,7 @@ import { buildProductList } from './buildProductList'
 import { buildSummarySection } from './buildSummarySection'
 
 
-const API_PRODUCT_LINK = '/json/products.json'
+const API_PRODUCT_LINK = 'json/products.json'
 
 const bindButtons = () => {
     const confirmButton = document.querySelector('#confirmButton')

@@ -21,4 +21,4 @@
     <div class="summary-total  ">
         <span class="summary-total--label">Total:</span>
         <strong class="summary-total--value">${t.total_price_formatted}</strong> 
-    </div>`,d=".summary-prices",p=t=>{const s=document.querySelector(d);s.innerHTML=m(t)},y="/json/products.json",f=()=>{const t=document.querySelector("#confirmButton");t.addEventListener("click",r=>{r.target.classList.add("loading")}),document.querySelector("#cancelButton").addEventListener("click",r=>{t.classList.remove("loading")})},g=async()=>{const{products:t,summary:s}=await a(y);setTimeout(()=>{u(t)},1e3),setTimeout(()=>{p(s)},1500),f()};g();
+    </div>`,d=".summary-prices",p=t=>{const s=document.querySelector(d);s.innerHTML=m(t)},y="json/products.json",f=()=>{const t=document.querySelector("#confirmButton");t.addEventListener("click",r=>{r.target.classList.add("loading")}),document.querySelector("#cancelButton").addEventListener("click",r=>{t.classList.remove("loading")})},g=async()=>{const{products:t,summary:s}=await a(y);setTimeout(()=>{u(t)},1e3),setTimeout(()=>{p(s)},1500),f()};g();
