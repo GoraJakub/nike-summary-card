@@ -6,7 +6,7 @@
             "size": "10",
             "price_gross_formatted": "$100.00",
             "price_gross": 100.00,
-            "icon": "/images/nike_dunk.png"
+            "icon": "images/nike_dunk.png"
         },
         {
             "name": "Nike Sportswear Therma-FIT City Series",
@@ -14,7 +14,7 @@
             "size": "L",
             "price_gross_formatted": "$170.00",
             "price_gross": 170.00,
-            "icon": "/images/nike_therma.png"
+            "icon": "images/nike_therma.png"
         },
         {
             "name": "Nike Dunk Low Retro",
@@ -22,7 +22,7 @@
             "size": "10",
             "price_gross_formatted": "$100.00",
             "price_gross": 100.00,
-            "icon": "/images/nike_dunk.png"
+            "icon": "images/nike_dunk.png"
         },
         {
             "name": "Nike Sportswear Therma-FIT City Series",
@@ -30,7 +30,7 @@
             "size": "L",
             "price_gross_formatted": "$170.00",
             "price_gross": 170.00,
-            "icon": "/images/nike_therma.png"
+            "icon": "images/nike_therma.png"
         }
     ],
     "summary": {
