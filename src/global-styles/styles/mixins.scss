@@ -6,3 +6,4 @@
 @mixin transition($prop: var(--transition-property), $timing: var(--transition-timing), $duration: var(--transition-duration)){
     transition: $prop $timing $duration;
 }
+

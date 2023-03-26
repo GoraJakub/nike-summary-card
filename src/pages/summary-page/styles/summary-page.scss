@@ -1,33 +1,126 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
 
-
+@mixin scrollbar() {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px 10px var(--color-gray-200);
+        border: solid 3px transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 10px 10px black;
+        border: solid 3px transparent;
+    }
+}
+#summary-page {
+    @media (min-width: 834px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-gray-200);
+        width: 100vw;
+        height: 100vh;
+    }
+}
 .summary-wrapper {
     padding: 50px 24px;
+    background-color: var(--color-bright);
+    @media (min-width: 834px) {
+        width: 100%;
+        padding: 50px 50px;
+        max-width: 540px;
+        border-radius: var(--border-radius-md);
+    }
     
     .summary-headline {
         margin-bottom: 50px;
     }
     
     .summary-products {
-        min-height: 312px;
+        height: 312px;
+        overflow-y: auto;
+        @include scrollbar();
+
+        @media (min-width: 834px) {
+            height: 230px;
+        }
         &-item {
             display: flex;
             min-height: 80px;
-            margin-bottom: 24px;
+            margin-bottom: 15px;
             .product-icon {
                 max-width: 78px;
                 min-height: 80px;
                 height: 100%;
                 width: 100%;
-                background-color: red;
                 border-radius: var(--border-radius-sm);
-                margin-right: 18px;
+                margin-right: 14px;
+                &--img {
+                    border-radius: var(--border-radius-sm);
+                }
             }
             .product-details {
-                // background-color: aqua;
                 width: 100%;
+                position: relative;
+                > * {
+                    display: block;
+                }
+                .product-name {
+                    font: var(--font-medium-200);
+                    color: var(--primary-color);
+                    max-width: 190px;
+                    line-height: 1.1;
+                    margin-bottom: 2px;
+                    @media (min-width: 834px) {
+                        max-width: 100%;
+                    }
+                }
+                .product-category,
+                .product-size {
+                    font: var(--font-regular-100);
+                    color: var(--color-gray-800);
+                }
+                .product-price {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 0;
+                    font: var(--font-regular-300)
+                }
             }
         }
+    }
+    .summary-prices {
+        margin-bottom: 41px;
+        min-height: 111px;
+        &--label {
+            font: var(--font-regular-200);
+            color: var(--color-gray-800);
+        }
+        &--value {
+            font: var(--font-regular-200);
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            min-height: 18px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+        &-sub {
+            margin-bottom: 12px;
+        }
+    }
+    .summary-total {
+        font: var(--font-medium-300);
+        display: flex;
+        justify-content: space-between;
+    }
+    #confirmButton {
+        margin-bottom: 12px;
     }
 }
